@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>🌟 Super Hero App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container mt-5 mb-5">
+    <h2>🌟 Super Hero App</h2>
+    <p>You can search for a super hero like "batman" or "thanos" or... You can generate a random hero</p>
+    <div class="row justify-content-between">
+      <input class="col-7" id='searchInput' type="text" placeholder="Type the name of a hero 🌟">
+      <button class="col-2 btn btn-primary" id='clearButton'>Clear Search</button>
+      <button class="col-2 btn btn-secondary" id='newHeroButton'>Random Hero</button>
+    </div>
+    <div id="suggestions" class="row row-cols-1 row-cols-md-4 g-4 mt-3"></div>
+    </br>
+    <div class="hero card" style="display: none;">
+      <div class="row">
+        <div id='heroImage' class="col-md-4"><img src="" alt=""></div>
+        <div id="infoHero" class="col-md-8 pt-3 pb-3"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

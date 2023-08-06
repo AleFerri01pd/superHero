@@ -1,0 +1,31 @@
+:root {
+    --bg-color: #0A2647;
+    --primary-color: #144272;
+    --secondary-color: #205295;
+    --third-color: #2C74B3;
+    --bs-btn-bg: var(--secondary-color)
+}
+
+html,
+body {
+    background-color: var(--bg-color) !important;
+    color: white;
+}
+
+.btn.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--primary-color);
+}
+
+.btn:hover {
+    border-color: white;
+}
+
+.hero.card {
+    background-color: var(--third-color);
+    color: white;
+}
